@@ -1,0 +1,37 @@
+# Minimal environment of the benchmark: only the packages that the code imports, with the versions of environment/requirements-lock.txt
+# (the full list of the run behind the paper). TabNet needs a second environment (environment/requirements-tabnet-tf1-lock.txt);
+# the shift diagnostics need environment/requirements-shift-diagnostics.txt on top of this one.
+# rtdl 0.0.13 declares numpy<2 and torch<2 but runs with the versions below; install it after this file without dependency resolution:
+#   pip install --no-deps rtdl==0.0.13
+# tabfm must be installed from a clean git checkout of the pinned commit (the code checks it): see docs/reproducing.md, paragraph "TabFM"
+name: defectshift
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu118
+      - torch==2.7.1+cu118
+      - numpy==2.4.6
+      - pandas==2.2.3
+      - pyarrow==25.0.1
+      - scipy==1.15.3
+      - scikit-learn==1.9.1
+      - joblib==1.5.3
+      - psutil==7.2.2
+      - optuna==4.9.0
+      - xgboost==3.2.0
+      - lightgbm==4.7.0
+      - catboost==1.2.10
+      - category_encoders==2.11.1
+      - qhoptim==1.1.0
+      - tensorboardX==2.6.5
+      - huggingface_hub==1.22.0
+      - pytabkit==1.7.3
+      - tabpfn==9.1.0
+      - tabicl==2.2.0
+      - tabdpt==1.3.1
+      - structured-data-models @ git+https://github.com/NVIDIA/structured-data-models.git@98f61289c7a4e1bce3b33771223ac2e123b63f19
+      - exaonetabular @ git+https://github.com/LGAI-Research/EXAONE-Tabular.git@8638e07d09fad154249bd75ba4786181491f7025
+      - pytest==9.1.1

@@ -1,0 +1,12 @@
+# Packages added to the main environment (environment/environment.yml) for scripts/10c_shift_diagnostics.py.
+# The released diagnosis ran in the main environment plus exactly these packages; the shared packages have the same versions.
+# otdd and disde are the authors' repositories at the commits used in the paper.
+# Install without dependency resolution (their requirements would replace the pinned torch and numpy of the main environment):
+#   pip install --no-deps -r environment/requirements-shift-diagnostics.txt
+geomloss==0.2.4
+POT==0.9.6.post1
+seaborn==0.13.2
+adjustText==1.4.0
+munkres==3.0.0
+otdd @ git+https://github.com/microsoft/otdd@72f1b22
+disde @ git+https://github.com/namkoong-lab/disde@eda6394

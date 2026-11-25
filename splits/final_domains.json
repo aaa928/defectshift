@@ -1,0 +1,15 @@
+{
+  "temporal": [
+    "x_time<=2099-05-04 21:18:39",
+    "y_time<=2099-05-10 02:20:07.500000"
+  ],
+  "categorical": [
+    "cat_019",
+    "cat_039",
+    "cat_045",
+    "cat_005",
+    "cat_050"
+  ],
+  "n_categorical": 5,
+  "n_categorical_passed_screening": 16
+}

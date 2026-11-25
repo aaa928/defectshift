@@ -1,0 +1,29 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+catboost_info/
+cache/
+logs/
+.env
+
+# Data and run artifacts are distributed on Zenodo, not in this repository
+data/*.parquet
+*.npz
+*.npy
+
+# Trained model files are not distributed
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.ckpt
+*.cbm
+*.ubj
+*.safetensors
+
+# Default output folder of the pipeline (top level only)
+/results/
+
+# Official NODE, TabNet and TabFM sources cloned by the installation steps (docs/reproducing.md)
+vendor/

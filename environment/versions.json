@@ -1,0 +1,47 @@
+{
+ "note": "Versions of the environment, hardware and external code that produced the results of the paper; generated from the run manifest of the main benchmark, except the commit of the TabPFN weights, which was read from the download metadata of the weights file.",
+ "python": "3.11.15",
+ "python_tabnet": "3.8.20",
+ "torch_cuda": "11.8",
+ "gpu": "NVIDIA L4",
+ "nvidia_driver": "570.124.06",
+ "packages": {
+  "numpy": "2.4.6",
+  "pandas": "2.2.3",
+  "scikit-learn": "1.9.1",
+  "scipy": "1.15.3",
+  "torch": "2.7.1+cu118",
+  "xgboost": "3.2.0",
+  "lightgbm": "4.7.0",
+  "catboost": "1.2.10",
+  "optuna": "4.9.0",
+  "pytabkit": "1.7.3",
+  "rtdl": "0.0.13",
+  "tabpfn": "9.1.0",
+  "tabicl": "2.2.0",
+  "tabdpt": "1.3.1",
+  "tabfm": "1.0.1",
+  "exaonetabular": "1.0.0",
+  "structured-data-models": "0.1.0rc2.dev198+g98f61289c"
+ },
+ "foundation_models": {
+  "TabPFN": "tabpfn 9.1.0, ModelVersion.V3_5, weights HF commit 06bf2ba35c80a92a3b9abb436b99cf49e7a0365e (tabpfn-v3.5-20260909.safetensors)",
+  "TabICL": "tabicl 2.2.0 (TabICLv2 regressor), weights HF snapshot 4dcd344ece2c00be9e831fdd35bed57b5ad83e19",
+  "TabFM": "tabfm 1.0.1 git fbb665569425fd2f490c6576b3af967876fe11ff, backend tabfm_v1_0_0_pytorch, weights HF snapshot 77cb9cc1b4fd3a9c77fbb9552c218200bb4dab83",
+  "Kumo": "structured-data-models 0.1.0rc2.dev198+g98f61289c commit 98f61289c7a4e1bce3b33771223ac2e123b63f19, KumoTabular size=large, weights Hub tag v1.0.1 (snapshot 3c3e10bbdb590ace29e7026847f92db3c603096d), num_estimators=16, autocast torch.float16",
+  "TabDPT": "tabdpt 1.3.1, weights HF snapshot a5ca6e01c0fa09ec68c73e958e5199d1932abb3a",
+  "EXAONE": "exaonetabular 1.0.0 code commit 8638e07d09fad154249bd75ba4786181491f7025, weights HF snapshot 093ad1c2613e1e95d26df8610451d2e02ed53cbe"
+ },
+ "official_code": {
+  "NODE": {
+   "repo": "https://github.com/Qwicen/node",
+   "commit": "3bae6a8",
+   "license": "MIT"
+  },
+  "TabNet": {
+   "repo": "https://github.com/google-research/google-research/tree/master/tabnet",
+   "commit": "0a1b0fe",
+   "license": "Apache-2.0"
+  }
+ }
+}

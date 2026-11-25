@@ -1,0 +1,17 @@
+# Dependencies: see environment/environment.yml (minimal) and environment/requirements-lock.txt (full list of the run behind the paper).
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "defectshift"
+version = "1.0.0"
+description = "DefectShift benchmark code"
+readme = "README.md"
+keywords = ["benchmark", "distribution shift", "tabular regression", "manufacturing"]
+license = "MIT"
+requires-python = ">=3.11"
+dependencies = []   # intentionally empty: the pinned packages are in environment/ (conda env create -f environment/environment.yml)
+
+[tool.setuptools.packages.find]
+include = ["defectshift*"]
